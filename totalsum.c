@@ -19,7 +19,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         printf("\nEnter details for student %d:\n", i + 1);
         printf("Name: ");
-        scanf(" %[^\n]s", students[i].name);  // Read name with spaces
+        scanf(" %[^\n]s", students[i].name); 
         printf("Roll Number: ");
         scanf("%d", &students[i].rollNumber);
         printf("Enter marks for three subjects:\n");
@@ -27,7 +27,7 @@ int main() {
         for (int j = 0; j < 3; j++) {
             printf("Subject %d: ", j + 1);
             scanf("%f", &students[i].marks[j]);
-            total += students[i].marks[j];  // Accumulate total marks
+            total += students[i].marks[j];  
         }
         students[i].totalMarks = total;
         students[i].averageMarks = total / 3;
